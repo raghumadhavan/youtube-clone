@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useContext } from "react";
+import { Grid } from "@material-ui/core";
+import { SearchBar, VideoDetail, VidoeList } from "./components";
+import Provider from "./context/Provider";
+import VideoList from "./components/VideoList";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider>
+      <Grid justify="center" container spacing={10}>
+        <Grid item xs={6} md={12}>
+          <Grid container spacing={10}>
+            <Grid item xs={12} sm={12} md={12}>
+              <SearchBar />
+            </Grid>
+            <Grid item xs={12} md={8}>
+              <VideoDetail />
+            </Grid>
+            <Grid item xs={4}>
+              <VideoList />
+            </Grid>
+          </Grid>
+        </Grid>
+      </Grid>
+    </Provider>
   );
 }
 
