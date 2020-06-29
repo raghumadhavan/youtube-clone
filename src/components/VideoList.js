@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from "react";
-import { Grid, Paper, Typography } from "@material-ui/core";
+import { Grid } from "@material-ui/core";
 import VideoItem from "./VideoItem";
 import { Consumer } from "../context/Provider";
 

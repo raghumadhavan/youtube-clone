@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import { Grid, Paper, Typography } from "@material-ui/core";
 import { Consumer } from "../context/Provider";
 

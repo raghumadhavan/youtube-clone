@@ -1,8 +1,7 @@
-import React, { useContext } from "react";
+import React from "react";
 import { Grid } from "@material-ui/core";
-import { SearchBar, VideoDetail, VidoeList } from "./components";
+import { SearchBar, VideoDetail, VideoList } from "./components";
 import Provider from "./context/Provider";
-import VideoList from "./components/VideoList";
 
 function App() {
   return (
